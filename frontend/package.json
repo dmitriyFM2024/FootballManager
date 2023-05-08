@@ -4,12 +4,10 @@
   "private": true,
   "dependencies": {
     "@babel/preset-typescript": "^7.21.5",
-    "@craco/craco": "^7.1.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "core-js": "^3.30.2",
-    "glob": "^10.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
@@ -27,7 +25,6 @@
   },
   "scripts": {
     "start": "webpack-cli serve --mode=development --env development --open --hot",
-    "build": "webpack --mode=production --env production --progress",
     "lint": "eslint src/**/*.{ts,tsx} --quiet --fix"
   },
   "eslintConfig": {
