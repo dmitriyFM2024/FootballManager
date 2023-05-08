@@ -1,0 +1,9 @@
+.sidebar {
+    background: $white;
+    width: 10%;
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+    }
+}
