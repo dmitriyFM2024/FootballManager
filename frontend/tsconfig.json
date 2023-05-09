@@ -22,4 +22,11 @@
     "include": [
       "./src",
       "webpack.config.ts" ],
-  }
+    "experimentalDecorators": true,  
+    "outDir": "./dist",
+    "forceConsistentCasingInFileNames": true,  
+    "strict": true,      
+    "strictPropertyInitialization": false,          
+    "suppressImplicitAnyIndexErrors": true,
+    "skipLibCheck": true 
+}
