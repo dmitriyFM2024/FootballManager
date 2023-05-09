@@ -1,3 +1,4 @@
+import Homepage from "./components/homepage";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import SideBar from './components/sidebar/index';
@@ -9,7 +10,7 @@ const App = () => {
 
       <div className="content">
         <Routes>
-          <Route path="/homepage" element={<div>1</div>}/>
+          <Route path="/homepage" element={<Homepage />}/>
           <Route path="/inbox" element={<div>2</div>}/>
         </Routes>
       </div>
