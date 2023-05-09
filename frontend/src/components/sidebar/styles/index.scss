@@ -1,60 +1,60 @@
 .sidebar {
-    background: $black03;
-    height: 100%;
-    position: relative;
-    width: 10%;
+	background: $black03;
+	height: 100%;
+	position: relative;
+	width: 10%;
 
-    &_list {
-        display: flex;
-        flex-direction: column;
-    }
+	&_list {
+		display: flex;
+		flex-direction: column;
+	}
 
-    &_item {
-        align-items: end;
-        display: flex;
-        padding: 1rem;
-        border-bottom: 1px solid $lightGray02;
-        font-size: 16px;
-        cursor: pointer;
-        color: $white;
-        text-decoration: none;
-        font-family: $baseFontFamily;
+	&_item {
+		align-items: end;
+		display: flex;
+		padding: 1rem;
+		border-bottom: 1px solid $lightGray02;
+		font-size: 16px;
+		cursor: pointer;
+		color: $white;
+		text-decoration: none;
+		font-family: $baseFontFamily;
 
-        span {
-            margin-left: 0.4rem;
-        }
+		span {
+			margin-left: 0.4rem;
+		}
 
-        svg {
-            fill: $white;
-            font-size: 22px;
-        }
+		svg {
+			fill: $white;
+			font-size: 22px;
+		}
 
-        &:hover {
-            background-color: $lightGray01;
-        }
-    }
+		&:hover {
+			background-color: $lightGray01;
+		}
+	}
 
-    &_bottom {
-        margin-top: 100%;
-        color: $white;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-    }
+	&_bottom {
+		margin-top: 100%;
+		color: $white;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+	}
 
-    &_logo {
-        font-family: $sigmar;
-        font-size: 18px;
-    }
+	&_logo {
+		font-family: $sigmar;
+		font-size: 18px;
+	}
 
-    &_version {
-        font-size: 12px;
-        margin: 0.5rem 0 0.2rem 0;
-    }
+	&_version {
+		font-size: 12px;
+		margin: 0.5rem 0 0.2rem 0;
+	}
 
-    .active {
-        font-weight: 900;
-        background: $lightGray01;
-    }
+	.active {
+		font-weight: 900;
+		background: $lightGray01;
+	}
 }

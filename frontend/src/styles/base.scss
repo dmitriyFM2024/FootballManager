@@ -1,22 +1,22 @@
-
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url('../images/background/bg.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+	margin: 0;
+	padding: 0;
+	background-image: url('../images/background/bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-ul, li {
-    margin: 0;
-    padding: 0;
+ul,
+li {
+	margin: 0;
+	padding: 0;
 }
 
 .app {
-    display: flex;
-    height: 100vh;
-    
-    .content {
-        width: 90%;
-    }
+	display: flex;
+	height: 100vh;
+
+	.content {
+		width: 90%;
+	}
 }
