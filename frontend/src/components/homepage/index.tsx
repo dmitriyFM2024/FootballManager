@@ -4,7 +4,7 @@ import TopBar from "../topbar";
 const Homepage = () => {
     return (
         <>
-            <TopBar />
+            <div>123</div>
         </>
     )
 }

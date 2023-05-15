@@ -1,9 +1,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url('../images/background/bg.svg');
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 ul,
@@ -15,6 +12,8 @@ li {
 .app {
 	display: flex;
 	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	.content {
 		width: 90%;
