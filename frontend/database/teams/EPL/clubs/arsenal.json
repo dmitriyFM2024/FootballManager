@@ -1,5 +1,9 @@
 {
-	"teamId": 1,
+	"settings": {
+		"color": "red",
+		"teamId": 1,
+		"logoPath": "arsenal.png"
+	},
 	"clubInfo": {
 		"name": "Arsenal",
 		"city": "London",

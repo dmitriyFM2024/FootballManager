@@ -1,6 +1,4 @@
-const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const webpackConfig = () => ({
@@ -9,12 +7,21 @@ const webpackConfig = () => ({
 		extensions: ['.ts', '.tsx', '.js'],
 		plugins: [new TsconfigPathsPlugin({ configFile: './tsconfig.json' })],
 	},
-	output: {
-		path: path.join(__dirname, '/build'),
-		filename: 'build.js',
-	},
 	module: {
 		rules: [
+			{
+				test: /\.(png|jpe?g|gif)$/i,
+				use: [
+				  {
+					loader: 'file-loader',
+					options: {
+					  name: '[name].[ext]',
+					  outputPath: 'images',
+					  publicPath: 'images',
+					},
+				  },
+				],
+			  },
 			{
 				test: /\.tsx?$/,
 				loader: 'ts-loader',
@@ -31,26 +38,22 @@ const webpackConfig = () => ({
 					{
 						loader: 'sass-loader',
 						options: {
-							additionalData: `@import 'src/styles/variables';`,
+							additionalData: `@import 'src/styles/variables'; @import 'src/styles/mixins';`,
 						},
+						
 					},
 				],
-			},
+			}
 		],
 	},
 	devServer: {
-		port: 9099,
+		port: 9100,
 		open: true,
 		historyApiFallback: true,
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: './public/index.html',
-		}),
-		new ForkTsCheckerWebpackPlugin({
-			eslint: {
-				files: './src/**/*.{ts,tsx,js,jsx}',
-			},
 		}),
 	],
 });
