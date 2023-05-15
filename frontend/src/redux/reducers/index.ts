@@ -11,9 +11,8 @@ export const initialSlice = createSlice({
 	reducers: {
 		changeCurrentDate(state) {
 			state.currentDate = setNextDate(state.currentDate);
-		}
-	}
+		},
+	},
 });
-
 
 export default initialSlice.reducer;

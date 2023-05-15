@@ -12,16 +12,16 @@ const webpackConfig = () => ({
 			{
 				test: /\.(png|jpe?g|gif)$/i,
 				use: [
-				  {
-					loader: 'file-loader',
-					options: {
-					  name: '[name].[ext]',
-					  outputPath: 'images',
-					  publicPath: 'images',
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+							outputPath: 'images',
+							publicPath: 'images',
+						},
 					},
-				  },
 				],
-			  },
+			},
 			{
 				test: /\.tsx?$/,
 				loader: 'ts-loader',
@@ -40,10 +40,9 @@ const webpackConfig = () => ({
 						options: {
 							additionalData: `@import 'src/styles/variables'; @import 'src/styles/mixins';`,
 						},
-						
 					},
 				],
-			}
+			},
 		],
 	},
 	devServer: {

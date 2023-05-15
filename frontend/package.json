@@ -25,8 +25,6 @@
 	},
 	"scripts": {
 		"start": "webpack-cli serve --mode=development --env development --open --hot",
-		"lint": "eslint src/**/*.{ts,tsx} --quiet --fix",
-		"lin-fix": "eslint ./src/** --fix",
 		"prettify-all": "npx prettier --write ."
 	},
 	"eslintConfig": {
