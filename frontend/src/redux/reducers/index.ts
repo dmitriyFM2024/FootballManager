@@ -6,7 +6,7 @@ export const initialSlice = createSlice({
 	name: 'initialSlice',
 	initialState: {
 		selectedClub: EPLTeams[0],
-		currentDate: '08.01.2022',
+		currentDate: 'Jan 13, 2024',
 	},
 	reducers: {
 		changeCurrentDate(state) {

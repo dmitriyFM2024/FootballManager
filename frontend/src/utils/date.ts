@@ -17,5 +17,5 @@ export const setNextDate = (date) => {
 
 	currentDate.setDate(currentDate.getDate() + 1);
 
-	return `${months[currentDate.getMonth()]} ${currentDate.getDate()} ${currentDate.getFullYear()}`;
+	return `${months[currentDate.getMonth()]} ${currentDate.getDate()}, ${currentDate.getFullYear()}`;
 };

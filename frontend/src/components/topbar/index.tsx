@@ -9,6 +9,7 @@ import { RiArrowDownSLine } from 'react-icons/ri';
 import './styles/index.scss';
 import { useLocation } from 'react-router';
 import { tabItems } from './utils';
+import { useSelector, useStore } from 'react-redux';
 
 const TopBar = () => {
 	const [isSearch, setIsSearch] = useState(false);
@@ -16,12 +17,21 @@ const TopBar = () => {
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	const pathname = useLocation().pathname.replace('/', '');
+
+	const { dispatch } = useStore();
 	const {
 		currentDate,
 		selectedClub: {
 			settings: { color, logoPath },
 		},
-	} = initialSlice.getInitialState();
+	} = useSelector(state => state.mainReducer);
+	const { changeCurrentDate } = initialSlice.actions;
+
+	const handleEnterPress = event => {
+		if (event.keyCode === 13) {
+
+		}
+	}
 
 	return (
 		<div
@@ -43,13 +53,15 @@ const TopBar = () => {
 								<input
 									type="text"
 									onChange={(e) => setSearchValue(e.target.value)}
+									onBlur={() => setIsSearch(false)}
+									onKeyUp={handleEnterPress}
 									value={searchValue}
 								/>
 							) : (
 								<>
 									<BsSearch />
 									<div className="df fdc ml05">
-										<div className="upcase bold">{pathname}</div>
+										<div className="upcase bold">{pathname || 'Homepage'}</div>
 										<div className="name">Johny McWalter - Arsenal</div>
 									</div>
 								</>
@@ -62,7 +74,10 @@ const TopBar = () => {
 								<div className="time">Tue 0:00</div>
 								<div>{currentDate}</div>
 							</div>
-							<div className="button">
+							<div 
+								className="button"
+								onClick={() => dispatch(changeCurrentDate())}
+							>
 								Next
 								<IoIosArrowDroprightCircle />
 							</div>
@@ -71,11 +86,12 @@ const TopBar = () => {
 				</div>
 			</div>
 			<div className="topbar_bottom">
-				{tabItems[pathname].map((item, index) => {
+				{tabItems?.[pathname]?.map((item, index) => {
 					return (
 						<div
 							className={`item ${index === activeIndex && 'item_active'}`}
 							onClick={() => setActiveIndex(index)}
+							key={item.name}
 						>
 							{item.name}
 							{item.sub && <RiArrowDownSLine />}

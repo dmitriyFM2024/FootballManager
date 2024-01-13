@@ -12,7 +12,7 @@ const SideBar = () => {
 	return (
 		<div className="sidebar">
 			<ul className="sidebar_list">
-				<NavLink to="/homepage" className="sidebar_item">
+				<NavLink to="/" className="sidebar_item">
 					<HiHome />
 					<span>Homepage</span>
 				</NavLink>
