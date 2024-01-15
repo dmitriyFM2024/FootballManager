@@ -35,7 +35,7 @@ const TopBar = () => {
 
 	return (
 		<div
-			className="topbar"
+			className="js_topbar topbar"
 			style={{ backgroundImage: `linear-gradient(to left, #1d2030, #1d2030, #1d2030, ${color})` }}
 		>
 			<div className="topbar_top">

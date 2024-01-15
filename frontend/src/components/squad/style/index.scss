@@ -1,0 +1,49 @@
+.squad {
+    &__table-container {
+        background-color: $mainColor1;
+
+        .MuiTableCell-head {
+            background-color: $mainColor1 !important;
+        }
+    }
+
+    &__table-head-item {
+        border-top: 1px solid $lightGray03 !important;
+        color: $lightGray !important;
+        cursor: pointer;
+    }
+
+    &__table-body-item {
+        &:nth-child(2n + 1){
+            background-color: $subMainColor !important;
+        }
+        .MuiTableCell-body  {
+            color: $white !important;
+        }
+    }
+
+    &__flag {
+        margin: 0 6px -3px 0;
+        width: 30px;
+    }
+
+    .info-container {
+        background: $infoColor;
+        border-radius: 4px;
+        color: $mainColor09;
+        cursor: pointer;
+        padding: 8px;
+        width: 24px;
+    }
+
+    .diagram {
+        cursor: pointer;
+        display: flex;
+        flex-flow: wrap-reverse;
+
+        &__item {
+            margin-right: 1px;
+            width: 14px;
+        }
+    }
+}

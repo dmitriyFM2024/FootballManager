@@ -50,7 +50,20 @@
 			"expires": "30-06-2024",
 			"rating": 4,
 			"potential": 5,
-			"nationality": "England"
+			"nationality": "England",
+			"gamesPerSeasonMain": 0,
+			"gamesPerSeasonSubstitute": 0,
+			"wantedBy": ["Manchester United", "Burnley", "Leicester"],
+			"conditions": 9.50,
+			"readyConditions": 6.20,
+			"morale": 9.00,
+			"lastFiveGames": ["3.80", "6.90", "1.20", "9.90", "4.20"],
+			"lastFiveGameQuality": 0.00,
+			"seasonGoals": 0,
+			"seasonAssists": 0,
+			"seasonRating": [5.55, 9.80, 7.50, 9.00, 6.80],
+			"selectedPosition": null,
+			"playingTimeHappiness": 100
 		},
 		{
 			"name": "Martin Ødegaard",
@@ -269,7 +282,7 @@
 		{
 			"name": "Matt Turner",
 			"age": 28,
-			"nationality": "U.S.A.",
+			"nationality": "USA.",
 			"club": "Arsenal",
 			"position": "GK",
 			"wage": "£40k",
@@ -345,8 +358,8 @@
 			"potential": 3
 		},
 		{
-			"Name": "Karl Jakob Hein",
-			"Age": 20,
+			"name": "Karl Jakob Hein",
+			"age": 20,
 			"nationality": "Estonia",
 			"club": "Arsenal",
 			"position": "GK",
@@ -358,8 +371,8 @@
 			"potential": 3
 		},
 		{
-			"Name": "Salah Oulad M'Hand",
-			"Age": 18,
+			"name": "Salah Oulad M'Hand",
+			"age": 18,
 			"nationality": "Holland",
 			"club": "Arsenal",
 			"position": "AM MC",
@@ -371,8 +384,8 @@
 			"potential": 3
 		},
 		{
-			"Name": "Catalin Cîrjan",
-			"Age": 19,
+			"name": "Catalin Cîrjan",
+			"age": 19,
 			"nationality": "Romania",
 			"club": "Arsenal",
 			"position": "AM AMR",
@@ -384,8 +397,8 @@
 			"potential": 3
 		},
 		{
-			"Name": "Amario Cozier-Duberry",
-			"Age": 17,
+			"name": "Amario Cozier-Duberry",
+			"age": 17,
 			"nationality": "England",
 			"club": "Arsenal",
 			"position": "AM AMR AML",
@@ -397,8 +410,8 @@
 			"potential": 3
 		},
 		{
-			"Name": "Ruell Walters",
-			"Age": 17,
+			"name": "Ruell Walters",
+			"age": 17,
 			"nationality": "England",
 			"club": "Arsenal",
 			"position": "DR DL",
@@ -410,8 +423,8 @@
 			"potential": 3
 		},
 		{
-			"Name": "Zach Awe",
-			"Age": 18,
+			"name": "Zach Awe",
+			"age": 18,
 			"nationality": "England",
 			"club": "Arsenal",
 			"position": "DC",
@@ -423,8 +436,8 @@
 			"potential": 3
 		},
 		{
-			"Name": "Khayon Edwards",
-			"Age": 18,
+			"name": "Khayon Edwards",
+			"age": 18,
 			"nationality": "England",
 			"club": "Arsenal",
 			"position": "AM AMR AML",
@@ -436,8 +449,8 @@
 			"potential": 3
 		},
 		{
-			"Name": "Hubert Graczyk",
-			"Age": 19,
+			"name": "Hubert Graczyk",
+			"age": 19,
 			"nationality": "England",
 			"club": "Arsenal",
 			"position": "GK",
